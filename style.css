@@ -83,3 +83,45 @@ p {
 .machine-score span {
     color: rgb(224, 71, 15);
 }
+/* Para celular */
+h1 {
+    font-size: 3rem; /* Aumenta o tamanho do título */
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 50px;
+        width: 90%;
+    }
+
+    .buttons {
+        gap: 20px;
+        flex-wrap: wrap; /* Para os botões ficarem em duas linhas se necessário */
+    }
+
+    button {
+        padding: 30px;
+        font-size: 40px;
+    }
+
+    h1 {
+        font-size: 2rem; /* Reduz tamanho do título para não quebrar */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 30px;
+        width: 95%;
+    }
+
+    button {
+        padding: 20px;
+        font-size: 30px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+}
